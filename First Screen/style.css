@@ -22,6 +22,11 @@ body {
 	margin-top: -100px;
 }
 
+#profile2 {
+	height: 400px;
+	width: 300px;
+}
+
 .content {
 	margin: 0 auto;
 	padding: 16px;
