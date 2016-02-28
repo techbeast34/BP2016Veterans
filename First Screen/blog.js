@@ -5,6 +5,8 @@ $(document).ready(function(){
 		console.log($("#zip").val());
 		ref.orderByChild("Zip").equalTo($("#zip").val()).on('value', function(data){
 			console.log(data.val())
+			sessionStorage.setItem('zipCode', $("#zip").val());
+			window.location.href = "page_two.html"
 		})
 	});
 });
