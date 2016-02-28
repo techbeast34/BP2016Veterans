@@ -12,29 +12,34 @@ $(document).ready(function(){
 		$(".content").prepend(blogPostHTML);
 	}
 
-	$("form").on("submit", function(e){
+	// $("form").on("submit", function(e){
+	// 	e.preventDefault();
+
+	// 	var title = $("#title").val();
+	// 	var content = $("textarea").val();
+	// 	var author = "Thomas";
+	// 	var date = new Date().toDateString();
+
+	// 	var blogPost = {
+	// 		"title": title,
+	// 		"content": content,
+	// 		"author": author,
+	// 		"date": date
+	// 	};
+
+	// firebase.push(blogPost);
+
+	// 	console.log(blogPost);
+	// })
+	$("#search").on("click", function(e){
 		e.preventDefault();
 
-		var title = $("#title").val();
-		var content = $("textarea").val();
-		var author = "Thomas";
-		var date = new Date().toDateString();
+		var text = $("#search").val();
+		var usersRef = new Firebase('https://radiant-inferno-3555.firebaseio.com/Veterans/Extra');
+		usersRef.set({
+		  test: "hi"
+		});
 
-		var blogPost = {
-			"title": title,
-			"content": content,
-			"author": author,
-			"date": date
-		};
-
-	firebase.push(blogPost);
-
-		console.log(blogPost);
-	})
-	$("#submit").on("submit", function(e){
-
-	var text = $("#search").val();
-	
-
+		var rootRef.child('users')
 	})
 })
