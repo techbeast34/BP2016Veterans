@@ -1,40 +1,10 @@
 $(document).ready(function(){
-	var firebase = new Firebase('https://blueprint-blog.firebaseio.com/');
+	var ref = new Firebase('https://radiant-inferno-3555.firebaseio.com/veterans')
 
-	function createBlogPost(post){
-		var title = $("<h1/>").text(post.title);
-		var content = $("<p/>").text(post.content);
-		var footer = $("<p/>").text(
-			"Published by" + post.author + "on" + post.date);
-
-		var blogPostHTML = $("<div/>").append([title, content, footer]);
-
-		$(".content").prepend(blogPostHTML);
-	}
-
-	$("form").on("submit", function(e){
-		e.preventDefault();
-
-		var title = $("#title").val();
-		var content = $("textarea").val();
-		var author = "Thomas";
-		var date = new Date().toDateString();
-
-		var blogPost = {
-			"title": title,
-			"content": content,
-			"author": author,
-			"date": date
-		};
-
-	firebase.push(blogPost);
-
-		console.log(blogPost);
-	})
-	$("#submit").on("submit", function(e){
-
-	var text = $("#search").val();
-	
-
-	})
-})
+	$("#submit-button").on("click", function (e){
+		console.log($("#zip").val());
+		ref.orderByChild("Zip").equalTo($("#zip").val()).on('value', function(data){
+			console.log(data.val())
+		})
+	});
+});
