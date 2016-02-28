@@ -3,15 +3,14 @@
 		<style>
 		body
 		
-		#banner_wrapper{
-			padding: 0;
-			margin: 0;
-			width: 100%;
-			height: 80%; 
-			background-image: url("homeless-veteran.jpg");
-		}
 		#banner {
-			width: 100%;
+		width: 100%;
+		margin-top: -50px;
+		}
+
+		#banner_wrapper {
+		height: 800px;
+		overflow: hidden;
 		}
 		
 		#page_top{
@@ -36,17 +35,17 @@
 			font-size: 150%;
 			font-family: 'Arial', sans-serif;
 		}
+
+		#square{
+			width: 200px;
+			height: 200px;
+		}
 		</style>
 	</head>
 	<body>
-		<div id="banner_wrapper"></div>
-		<div id="page_top">
-		</div>
-		<div id="pages">
-			<a href="index.html">Home</a>
-		</div>
-		<div class="content">
-		</div>
+		<<div id="banner_wrapper">
+    	  <img id="banner" src="homeless-veteran.jpg"/>
+   		 </div>
 
 		<div id="pages" align="center"> <b> Results for 01803 </b> </div>
 
@@ -56,16 +55,16 @@
 	    <td><b>Picture</b></td>
 	   </tr>
 	   <tr>
-	    <td><a href = "veteran0">John Smith</td>
-	    <td id = "comquest1"> 
+	    <td><a href = "veteran0.html">John Smith</td>
+	    <td> <img src="homeless1.jpg" </td>
 	   </tr>
 	   <tr>
-	    <td>Pillows</td>
-	    <td id = "comquest2">Commit? <input id="commit2" type="text"/></td>
+	    <td><a href = "veteran1.html"> John Brown</td>
+	    <td> <img src="homeless2.jpg" </td>
 	   </tr>
 	   <tr>
-	    <td>Blankets</td>
-	    <td id = "comquest3">Commit? <input id="commit3" type="text"/></td>
+	    <td><a href = "veteran2.html"> Doge</td>
+	    <td> <img id="square" src="doge.jpeg"> </td>
 	   </tr>
 	  </table>
 
