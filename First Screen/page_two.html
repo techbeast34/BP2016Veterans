@@ -3,19 +3,16 @@
 	<script src="http://code.jquery.com/jquery-2.2.1.js"> </script>
 	<script src="second_screen.js"></script>
 		<style>
-		body{
-			background-color: #00ff80;
-		}
+		body
 		
-		#banner_wrapper{
-			padding: 0;
-			margin: 0;
-			width: 100%;
-			height: 80%; 
-			background-image: url("homeless-veteran.jpg");
-		}
 		#banner {
-			width: 100%;
+		width: 100%;
+		margin-top: -50px;
+		}
+
+		#banner_wrapper {
+		height: 800px;
+		overflow: hidden;
 		}
 		
 		#page_top{
@@ -25,7 +22,6 @@
 			padding: 0;
 			margin: 0;
 			font-size: 250%;
-			background-color: #00ff80;
 		}
 
 		#page_mid{
@@ -39,24 +35,46 @@
 		#pages{
 			text-align: center;
 			font-size: 150%;
-			font-family: 'Times New Roman';
-			color: #00ff80;
+			font-family: 'Arial', sans-serif;
 		}
+
+		#square{
+			width: 200px;
+			height: 200px;
+		}
+
+		table, th, td {
+	    border: 1px solid black;
+		}
+
 		</style>
 
 	</head>
-	<body>
-		<div id="banner_wrapper"></div>
-		<div id="page_top">
-			<p><b><i>Return </i>The Favor</b></p>
-		</div>
-		<div id="pages">
-			<a href="index.html">Home</a>
-			<a href="page2.html">Veterans Near You</a>
-			<a href="page3.html">Life Stories</a>
-		</div>
-		<div class="content">
-			
-		</div>
+	<body bgcolor="#66CED6">
+		<<div id="banner_wrapper">
+    	  <img id="banner" src="homeless-veteran.jpg"/>
+   		 </div>
+
+		<div id="pages" align="center"> <b> Results for 01803 </b> </div>
+
+		<table align = "center">
+	   <tr>
+	    <td><b>Veteran</b></td>
+	    <td><b>Picture</b></td>
+	   </tr>
+	   <tr>
+	    <td><a href = "veteran0.html">John Smith</td>
+	    <td> <img src="homeless1.jpg" </td>
+	   </tr>
+	   <tr>
+	    <td><a href = "veteran1.html"> John Brown</td>
+	    <td> <img src="homeless2.jpg" </td>
+	   </tr>
+	   <tr>
+	    <td><a href = "veteran2.html"> Doge</td>
+	    <td> <img id="square" src="doge.jpeg"> </td>
+	   </tr>
+	  </table>
+
 	</body>
 </html>

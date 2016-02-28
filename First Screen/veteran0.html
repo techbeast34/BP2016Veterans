@@ -4,15 +4,16 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 
     <style>
-	table, th, td {
-    border: 1px solid black;
-	}
+		table, th, td {
+	    border: 1px solid black;
+		}
+	</style>
 
-</style>
-
+	<script src="http://code.jquery.com/jquery-2.2.1.js"> </script>
+	<script src = "./commit_script.js"></script>
   </head>
 
-  <body>
+  <body bgcolor="#66CED6">
 
     <div id="banner_wrapper">
       <img id="banner" src="homeless-veteran.jpg"/>
@@ -39,19 +40,19 @@
    </tr>
    <tr>
     <td>Food</td>
-    <td>Commit? <input type="text"/></td>
+    <td id = "comquest1">Commit? <input id="commit1" type="text"/></td>
    </tr>
    <tr>
     <td>Pillows</td>
-    <td>Commit? <input type="text"/></td>
+    <td id = "comquest2">Commit? <input id="commit2" type="text"/></td>
    </tr>
    <tr>
     <td>Blankets</td>
-    <td>Commit? <input type="text"/></td>
+    <td id = "comquest3">Commit? <input id="commit3" type="text"/></td>
    </tr>
   </table>
 
-  <button type = "button" id = "commit" align="center">Commit!</button>
+  <button type = "button" id = "commit" align="center" onclick=commit()>Commit!</button>
 
   </body>
 
