@@ -31,4 +31,10 @@ $(document).ready(function(){
 
 		console.log(blogPost);
 	})
+	$("#submit").on("submit", function(e){
+
+	var text = $("#search").val();
+	
+
+	})
 })
